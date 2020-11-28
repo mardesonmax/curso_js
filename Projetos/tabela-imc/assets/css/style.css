@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: #115666;
+  --primary-color-darker: #093038;
+  --secondary-color: #ddd;
+  --trasition-time: 0.3s all ease;
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  /* font-size: 1.3em; */
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form input, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  outline: none;
+  transition: var(--trasition-time);
+}
+
+form input:focus {
+  border-color: var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+  border-radius: 10px;
+  transition: var(--trasition-time);
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+
+
+/* Tabela */
+#tabela  {
+    padding-bottom: 20px;
+}
+#tabela table {
+    width: 100%;
+}
+#tabela thead tr {    
+    text-align: left;
+}
+
+#result {
+    width: 100%;
+    background-color: var(--primary-color);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    display: none;
+    transition: 0.5s;
+    padding: 5px;
+    text-align: center;
+}
+
+#form-imc small {
+    color: red;
+}
