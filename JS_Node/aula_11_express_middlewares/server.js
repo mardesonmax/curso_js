@@ -3,10 +3,16 @@ const express = require('express');
 const app = express();
 const routes = require('./routes');
 const path = require('path');
+const middleware = require('./src/middlewares/middleware');
 
 //Routes
 app.use(express.urlencoded({ extended: true }));
+
+//Middlewares
+app.use(middleware);
+
 app.use(routes);
+
 
 //Estaticos
 app.use(express.static(path.resolve(__dirname, 'public')))
