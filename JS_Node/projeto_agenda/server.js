@@ -24,7 +24,7 @@ const routes = require('./routes');
 const path = require('path');
 const helmet = require('helmet');
 const csrf = require('csurf');
-const { globalMid, csrfError } = require('./src/middlewares/middleware');
+const { globalMid, csrfError, verifiLogin } = require('./src/middlewares/middleware');
 
 app.use(helmet());
 app.use(express.urlencoded({ extended: true }));
