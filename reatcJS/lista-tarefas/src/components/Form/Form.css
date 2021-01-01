@@ -1,0 +1,31 @@
+
+.form {
+  display: flex;
+  flex-direction: row;
+}
+
+.form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 500px 0 0 500px;
+  border: none;
+  border-top: 2px solid var(--color-blue);
+  border-left: 2px solid var(--color-blue);
+  border-bottom: 2px solid var(--color-blue);
+}
+
+.form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+  border-radius: 0 500px 500px 0;
+  border: none;
+  background: var(--color-blue);
+  color: #fff;
+  transition: 0.3s;
+}
+
+.form button:hover {
+  background-color: var(--color-blue-active);
+}
